@@ -13,7 +13,7 @@ Step1: Find the bounding box coordinates and compute the centroid
 * The bounding box can be extracted for each frame using different object detector algorithms such as color thresholding + contour extraction, Haar cascades, HOG + Linear SVM, SSDs, Faster R-CNNs, etc.
 * The centroid (x,y) of the bounding box is computed.
 
-<p align="center"><img src="/media/manoj/Manoj_drive/Computer_vision(CV)/object-tracking/Documents/simple_object_tracking_step1.png" width="400" height="250" />
+<p align="center"><img src="https://github.com/Manojkl/object-tracking/blob/main/Documents/simple_object_tracking_step1.png" width="400" height="250" />
 
 * A unique id is assigned to the detected bounding boxes.
 
@@ -22,7 +22,7 @@ Step2: Euclidean distance between the new and existing bounding boxes are comput
 * For every frame in the video step1 is computed, however we need to associate the new object centroid to the old object centroid. To do this the euclidean distance between the new centroid and old centroid is calculated.
 * In the image below we can see we have detected three objects in our image. The two pairs that are close together are two existing objects.
 
-<p align="center"><img src="/media/manoj/Manoj_drive/Computer_vision(CV)/object-tracking/Documents/simple_object_tracking_step2.png" width="400" height="250" />
+<p align="center"><img src="https://github.com/Manojkl/object-tracking/blob/main/Documents/simple_object_tracking_step2.png" width="400" height="250" />
 
 * Euclidean distance between each pair of original centroid and new centroids are computed.
 
@@ -34,7 +34,7 @@ Step3: Existing object (x,y) cooridnate is updated
 
 * What if we have some left out centroid? What we do with it?
 
-<p align="center"><img src="/media/manoj/Manoj_drive/Computer_vision(CV)/object-tracking/Documents/simple_object_tracking_step3.png" width="400" height="250" />
+<p align="center"><img src="https://github.com/Manojkl/object-tracking/blob/main/Documents/simple_object_tracking_step3.png" width="400" height="250" />
 
 * We assign them as the new objet.
 
@@ -42,7 +42,7 @@ Step4: Register new objects
 
 * If the detected objects are more than the existing objects then new object is registered. It means to say we are adding the new object to our list of tracked objects. By giving new ID and storing the centroid of the bounding box coordinates.
 
-<p align="center"><img src="/media/manoj/Manoj_drive/Computer_vision(CV)/object-tracking/Documents/simple_object_tracking_step4.png" width="400" height="250" />
+<p align="center"><img src="https://github.com/Manojkl/object-tracking/blob/main/Documents/simple_object_tracking_step4.png" width="400" height="250" />
 
 * Go to step 2 and repeat the procedure for every frame.
 
