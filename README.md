@@ -26,8 +26,7 @@ pip install -r requirements.txt
 - The caffe model is pre-trained to detect human face.
 - Run the below code to detect and track the face in real time in the terminal.
 ``` sh
-python track_object_real_time.py --prototxt deploy.prototxt      
---model res10_300x300_ssd_iter_140000.caffemodel
+python track_object_real_time.py --prototxt deploy.prototxt --model res10_300x300_ssd_iter_140000.caffemodel
 ```
 - Run the below code to detect and track the face from video file in the terminal.
 ``` sh
