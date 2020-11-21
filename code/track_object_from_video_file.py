@@ -23,6 +23,8 @@ ap.add_argument("-m", "--model", required=True,
 # Probability threshold to filter weak detections. A default value of 0.5 is sufficient.
 ap.add_argument("-c", "--confidence", type=float, default=0.5,
 	help="minimum probability to filter weak detections")
+ap.add_argument("-f", "--video", required=True,
+	help="path to video file")
 args = vars(ap.parse_args())
 
 # initialize our centroid tracker and frame dimensions
@@ -35,7 +37,7 @@ net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
 
 # initialize the video stream and allow the camera sensor to warmup
 print("[INFO] starting video reading...")
-vs = cv2.VideoCapture('test.mp4')
+vs = cv2.VideoCapture(args["video"])
 time.sleep(2.0)
 
 _, frame = vs.read()
@@ -61,7 +63,6 @@ while (vs.isOpened()):
 		# if the frame dimensions are None, grab them
 		if W is None or H is None:
 			(H, W) = frame.shape[:2]
-		print(H,W)
 		# construct a blob from the frame, pass it through the network,
 		# obtain output predictions, and initialize the list of
 		# bounding box rectangles

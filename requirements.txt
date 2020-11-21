@@ -1,0 +1,5 @@
+python==3.7.4
+opencv_python==4.2.0.34
+imutils==0.5.3
+scipy==1.4.1
+numpy==1.19.0
