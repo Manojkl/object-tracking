@@ -15,8 +15,8 @@ Object tracking is the process of localizing the detected semantic object and tr
 
 <div align="center">
 	<!-- <img src="/media/manoj/Manoj_drive/Computer_vision/object-tracking/Images/person.gif" width="30%" height="30%"> -->
-	<img src="https://github.com/Manojkl/object-tracking/blob/main/Images/OD_1.png" width="70%" height="70%">
-	<img src="https://github.com/Manojkl/object-tracking/blob/main/Images/OD_2.png" width="70%" height="70%">
+	<img src="https://github.com/Manojkl/object-tracking/blob/main/Images/OD_1.png" width="100%" height="100%">
+	<img src="https://github.com/Manojkl/object-tracking/blob/main/Images/OD_2.png" width="100%" height="100%">
 
 </div>
 
