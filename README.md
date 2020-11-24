@@ -9,6 +9,17 @@
 </div>
 Object tracking is the process of localizing the detected semantic object and track the object in real time. Objetcs are typically human, animal, cars , etc 
 
+<h1 align="center">
+	Object detection survey
+</h1>
+
+<div align="center">
+	<!-- <img src="/media/manoj/Manoj_drive/Computer_vision/object-tracking/Images/person.gif" width="30%" height="30%"> -->
+	<img src="https://github.com/Manojkl/object-tracking/blob/main/Images/OD_1.png" width="70%" height="70%">
+	<img src="https://github.com/Manojkl/object-tracking/blob/main/Images/OD_2.png" width="70%" height="70%">
+
+</div>
+
 ### Dependencies:
  - Python (3.7.4)
  - opencv_python (4.2.0.34)
