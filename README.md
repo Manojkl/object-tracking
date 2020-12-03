@@ -30,7 +30,7 @@ Object tracking is the process of localizing the detected semantic object and tr
 - Clone the repository to the local machine using ```git clone.```
 - Make sure the requirment packages are installed 
 ```sh
-pip install -r requirements.txt
+pip install -r requirements.txt 
 ```
 - Change the directionry location to ```..\code\```
 - The caffe model is pre-trained to detect human face.
